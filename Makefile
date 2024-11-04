@@ -1,4 +1,4 @@
-#Python Parameters
+# Python Parameters
 PY = python3
 PIP = $(PY) -m pip
 PYRUN = $(PY) main.py
@@ -8,7 +8,7 @@ SRC_DIR = src
 TEST_DIR = tests
 REQUIREMENTS = requirements.txt
 
-#build targets
+# Build targets
 run:
 	@echo "Running the program..."
 	$(PYRUN)
@@ -47,7 +47,7 @@ clean:
 	find . -type f -name "*.pyc" -delete
 	rm -rf .pytest_cache .coverage
 
-# Help command
+# Help Command
 help:
 	@echo "Available commands:"
 	@echo "  make run           - Run the main program"

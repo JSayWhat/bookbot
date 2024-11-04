@@ -1,5 +1,7 @@
+FILE_PATH = 'books/frankenstein.txt'
+
 def main():
-    path_to_file = 'books/frankenstein.txt'
+    path_to_file = FILE_PATH
     with open(path_to_file, 'r') as f:
         file_contents = f.read()
         print(file_contents)
@@ -37,5 +39,6 @@ def print_report(path, word_count, character_count):
         print(f"The '{char}' character was found {count} times")
     print("--- End report ---")
 
+# This block ensures that the main function runs only when the script is executed directly
 if __name__ == '__main__':
     main()
